@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-force-http"
+    version="0.0.1">
+
+    <name>ForceHttp</name>
+
+    <description>
+        Force to accept HTTP in a Cordova app for Android 9+
+    </description>
+
+    <keywords>cordova,android,http</keywords>
+
+    <license>MIT</license>
+
+    <!-- android -->
+    <platform name="android">
+        <preference name="DOMAIN_1" default="" />
+		<preference name="DOMAIN_2" default="" />
+		<preference name="DOMAIN_3" default="" />
+		<preference name="DOMAIN_4" default="" />
+		<preference name="DOMAIN_5" default="" />
+        
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ForceHttp">
+                <param name="android-package" value="com.eferrer.plugin.ForceHttpPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="xml/network_security_config.xml" target-dir="res/xml/" />
+
+        <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
+            <application android:networkSecurityConfig="@xml/network_security_config" />
+        </edit-config>
+    </platform>
+</plugin>
