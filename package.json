@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-force-http",
+  "version": "0.0.1",
+  "description": "Force to accept HTTP in a Cordova app for Android 9+",
+  "cordova": {
+    "id": "cordova-plugin-force-http",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilio-ferrer/cordova-plugin-force-http.git"
+  },
+  "keywords": [
+    "cordova",
+    "android",
+    "http"
+  ],
+  "author": "Emilio Ferrer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emilio-ferrer/cordova-plugin-force-http/issues"
+  },
+  "homepage": "https://github.com/emilio-ferrer/cordova-plugin-force-http/README.md"
+}
