@@ -15,13 +15,7 @@
     <license>MIT</license>
 
     <!-- android -->
-    <platform name="android">
-        <preference name="DOMAIN_1" default="" />
-		<preference name="DOMAIN_2" default="" />
-		<preference name="DOMAIN_3" default="" />
-		<preference name="DOMAIN_4" default="" />
-		<preference name="DOMAIN_5" default="" />
-        
+    <platform name="android">        
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ForceHttp">
                 <param name="android-package" value="com.eferrer.plugin.ForceHttpPlugin"/>
